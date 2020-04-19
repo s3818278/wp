@@ -1,41 +1,496 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment 2</title>
-    
-    <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled> 
-    <link id='stylecss' type="text/css" rel="stylesheet" href="../style.css">
+<html lang="en">
 
-    <script src='../wireframe.js'></script>
-  </head>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>AQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js.download"></script>
+  <script src="popper.min.js.download"></script>
+  <script src="bootstrap.min.js.download"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flaticon.css">
+  <link href="css2" rel="stylesheet">
+</head>
 
-  <body>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">
+    <div class="icon">
+      <span class="flaticon-up-arrow"></span>
+    </div>
+  </button>
+  <nav class="navbar navbar-expand-md   bg-light sticky-top">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse-target">
+      <i class="fa fa-caret-square-o-down" style="font-size:36px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="collapse-target">
+      <a class="navbar-brand"><img style="height: 55px;" src="./AQ/AQ logo.jpg"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link"
+            href="https://github.com/s3818278/wp">About
+            us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+            href="https://github.com/s3818278/wp">Now
+            showing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+            href="https://github.com/s3818278/wp">Price
+            Section</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+            href="https://github.com/s3818278/wp">Synopsis
+            Area</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+            href="https://github.com/s3818278/wp">Booking
+            Area</a>
+        </li>
+      </ul>
+      <ul>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <div id="about-us-section" class="about-us ">
+    <div class="container bg1">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-10 ">
+          <div class="section-tittle bgplus">
+            <h1>About us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 ">
+        <div class="single-do text-center mb-30">
+          <div class="do-caption">
+            <h3>Improvement</h3>
+            <p>After 3 months of extensive improvements and renovations, we have upgraded our
+              facilities in order to provide customers with best movies experiences.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6  ">
+        <div class="single-do text-center mb-30">
+          <div class="do-caption">
+            <h3>New seat</h3>
+            <p>There are new seats: standard seats and reclinable first class seats</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 ">
+        <div class="do-caption bgplus">
+          <h3>Sound upgraded</h3>
+          <p>The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound. See
+            <a href="https://www.dolby.com/us/en/cinema">Dolby</a> for more information.</p>
+        </div>
+      </div>
 
-    <header>
-      <div>Put company logo and name here</div>
-    </header>
+    </div>
+  </div>
+  <div class="bg3"></div>
+  <div class="container " id="About-us">
+    <div class="row d-flex align-items-end justify-content-center text-center bg1">
+      <div class="col-lg-12 col-md-12 ">
+        <div class="standard-seats-cap bg2">
+          <h4>Images for our new seat</h4>
+          <p>Design-led aesthetics, supreme comfort and ultimate luxury</p>
+        </div>
+      </div>
+      <div class="container-fluid ">
+        <div class="row bg3">
+          <div class="col-sm-12">
+            <div id="slide" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-12">
+                        <div class="card" style="width: 300px; margin: auto;">
+                          <img class="card-img-top" src="./AQ/Standard Adult.jpg" alt="">
+                          <div class="card-body">
+                            <h5>Standard Adult</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-12">
+                        <div class="card" style="width: 300px;">
+                          <img class="card-img-top" src="./AQ/Standard Concession.jpg" alt="">
+                          <div class="card-body">
+                            <h5>Standard Concession</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-12">
+                        <div class="card" style="width: 300px;">
+                          <img class="card-img-top" src="./AQ/Standard Child.jpg" alt="">
+                          <div class="card-body">
+                            <h5>Standard Child</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-    <nav>
-      <div>Put website navigation links here</div>
-    </nav>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-12">
+                        <div class="card" style="width: 300px;margin: auto;">
+                          <img class="card-img-top" src="./AQ/First Class Adult.jpg" alt="">
+                          <div class="card-body r">
+                            <h5>First Class Adult</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-12">
+                        <div class="card" style="width: 300px;">
+                          <img class="card-img-top" src="./AQ/First Class Concession.jpg" alt="">
+                          <div class="card-body">
+                            <h5>First Class Conssesion</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-12">
+                        <div class="card" style="width: 300px;">
+                          <img class="card-img-top" src="./AQ/First Class Child.JPG" alt="">
+                          <div class="card-body">
+                            <h5>First Class Child</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-    <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
-      </article>
-    </main>
+                <a href="https://github.com/s3818278/wp"
+                  class="carousel-control-prev" data-slide="prev">
+                  <span class="carousel-control-prev-icon pink"></span>
+                </a>
+                <a href="https://github.com/s3818278/wp"
+                  class="carousel-control-next" data-slide="next">
+                  <span class="carousel-control-next-icon pink"></span>
+                </a>
 
-    <footer>
-      <div>&copy;<script>
-        document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-      <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-    </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  </body>
+    </div>
+  </div>
+  <div class="container">
+    <div class="parallex1"></div>
+  </div>
+  <div class="nowshowing-area" id="now-showing-section">
+    <div class="container bg3 justify-content-between" style="background-position: 5cm;">
+      <div class="row d-flex justify-content-center bg1">
+        <div class="col-lg-10 ">
+          <div class="section-tittle ">
+            <h1>Now Showing</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-start">
+        <div class="col-lg-6">
+          <table class="border border-dark">
+            <tbody>
+              <tr>
+                <td rowspan="2">
+                  <div id="table-card " class="card">
+                    <img src="./AQ/King's Man.jpg" alt="Avatar" style="height: 8cm;">
+                  </div>
+                </td>
+                <td class="border-top border-right border-bottom border-dark ">
+                  <h4>The King's Man</h4>
+                  <h5>(PG-13)</h5>
+                  <br>
+                  <ul><button type="button" class="btn btn-primary">Fri - 9:00</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 13:00</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 14:30</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 18:00</button></ul>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <table class="border border-dark">
+            <tbody>
+              <tr>
+                <td rowspan="2">
+                  <div id="table-card " class="card">
+                    <img src="./AQ/Bloodshot.jpg" alt="Avatar" style="height: 8cm;">
+                  </div>
+                </td>
+                <td class="border-top border-right border-bottom border-dark ">
+                  <h4>Bloodshot (R)</h4>
+                  <br>
+                  <br>
+                  <ul><button type="button" class="btn btn-primary">Fri - 14:45</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 18:30</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 19:00</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 20:00</button></ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br>
+      <div class="row d-flex justify-content-start">
+        <div class="col-lg-6">
+          <table class="border border-dark">
+            <tbody>
+              <tr>
+                <td rowspan="2">
+                  <div id="table-card " class="card">
+                    <img src="./AQ/Black Widow.jpg" alt="Avatar" style="height: 8cm;">
+                  </div>
+                </td>
+                <td class="border-top border-right border-bottom border-dark ">
+                  <h4>Black Widow (PG-13)</h4>
+                  <br>
+                  <br>
+                  <ul><button type="button" class="btn btn-primary">Fri - 15:30</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 17:00</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 18:00</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 21:00</button></ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <table class="border border-dark">
+            <tbody>
+              <tr>
+                <td rowspan="2">
+                  <div id="table-card " class="card">
+                    <img src="./AQ/Monster Hunter.jpg" alt="Avatar" style="height: 8cm;">
+                  </div>
+                </td>
+                <td class="border-top border-right border-bottom border-dark ">
+                  <h4>Monster Hunter (PG)</h4>
+                  <br>
+                  <br>
+                  <ul><button type="button" class="btn btn-primary">Fri - 12:45</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 14:40</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 18:00</button></ul>
+                  <ul><button type="button" class="btn btn-primary">Fri - 18:30</button></ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="parallex2"></div>
+  </div>
+  <!--price section area-->
+  <div id="price-section" class="price-section-area">
+    <div class="container bg3">
+      <div class="row d-flex  justify-content-center  bg2">
+        <div class="col-lg-10">
+          <div class="section-tittle bgplus">
+            <h1>Price Section</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex">
+      <table class="table table-bordered ">
+        <tbody>
+          <tr class="table-bordered">
+            <td class="table_cell1 border-dark">
+              <h5>Seat Type</h5>
+              <h5></h5>
+            </td>
+            <td class="table_cell2 border-dark">
+              <h5>Seat Code</h5>
+            </td>
+            <td class="table_cell3 border-dark">
+              <h5>All day Monday and Wednesday AND 12pm on Weekdays</h5>
+            </td>
+            <td class="table_cell4 border-dark">
+              <h5>All other times</h5>
+            </td>
+          </tr>
+          <tr class="table-bordered">
+            <td class="table_cell1_data border-dark">Standard Adult</td>
+            <td class="table_cell1_data border-dark">STA</td>
+            <td class="table_cell1_data border-dark">12.00</td>
+            <td class="table_cell1_data border-dark">19.80</td>
+          </tr>
+          <tr class="table-bordered">
+            <td class="table_cell1_data border-dark">Standard Concession</td>
+            <td class="table_cell1_data border-dark">STP</td>
+            <td class="table_cell1_data border-dark">11.50</td>
+            <td class="table_cell1_data border-dark">
+              17.50</td>
+          </tr>
+          <tr class="table-bordered">
+            <td class="table_cell1_data border-dark">Standard Child </td>
+            <td class="table_cell1_data border-dark">STC</td>
+            <td class="table_cell1_data border-dark">14.00</td>
+            <td class="table_cell1_data border-dark">
+              15.30</td>
+          </tr>
+          <tr class="table-bordered">
+            <td class="table_cell1_data border-dark">First Class Adult</td>
+            <td class="table_cell1_data border-dark">
+              FCA</td>
+            <td class="table_cell1_data border-dark">24.00</td>
+            <td class="table_cell1_data border-dark">
+              30.00</td>
+          </tr>
+          <tr class="table-bordered">
+            <td class="table_cell1_data border-dark">First Class Concession</td>
+            <td class="table_cell1_data border-dark">
+              FCP</td>
+            <td class="table_cell1_data border-dark">22.50</td>
+            <td class="table_cell1_data border-dark">
+              27.00</td>
+          </tr>
+          <tr class="table-bordered">
+            <td class="table_cell1_data border-dark">First Class Child</td>
+            <td class="table_cell1_data border-dark"> FCA</td>
+            <td class="table_cell1_data border-dark">21.00</td>
+            <td class="table_cell1_data border-dark">24.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <div class="container">
+      <div class="parallex4"></div>
+    </div>
+    <div id="synopsis-area-section" class="synopsis-area">
+      <div class="container bg3">
+        <div class="row d-flex  justify-content-center  bg2">
+          <div class="col-lg-10 ">
+            <div class="section-tittle  bgplus">
+              <h1>Synopsis Area</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 offset-md-1">
+          <h3>The King's Man</h3>
+        </div>
+        <div class="col-md-5 offset-md-1">
+          <h3>R-Rated</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4  ">
+          <h4>Plot Description
+          </h4>
+          <p>
+            As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out
+            millions, one man and his protégé must race against time to stop them.
+          </p>
+          <p>
+            — 20th Century Studios
+          </p>
+        </div>
+        <div class="col-md-4 offset-md-1 bg4 align-items-start">
+          <iframe width="600" height="400" src="https://www.youtube.com/embed/0pbLPOrTSsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h3 class="text-start">Make a booking:</h3>
+          </div>
+          <div class="col-md-7 align-items-end">
+            <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary border rounded">11:00</button>
+              <button type="button" class="btn btn-secondary border rounded">14:00</button>
+              <button type="button" class="btn btn-secondary border rounded">19:30</button>
+              <button type="button" class="btn btn-secondary border rounded">20:00</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="booking-area-section" class="booking-area-section">
+        <div class="container bg3">
+          <div class="row d-flex  justify-content-center  bg1">
+            <div class="col-lg-10">
+              <div class="section-tittle">
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer-main" style="background-image: url(img/footer_bg.png);">
+            <div class="footer-area footer-padding">
+              <div class="container device-width">
+                <div class="row d-flex justiy-content-between">
+                  <div class="col-lg-4 col-md-4 col-sm-7">
+                    <div class="single-footer-caption mb-50">
+                      <div class="single-footer-caption mb-30">
+                        <div class="footer-logo">
+                          <img src="./AQ/AQ logo.jpg" alt="">
+                        </div>
+                        <div class="footer-tittle">
+                          <div class="footer-pera">
+                            <p class="info1">
+                              1/1 Truong Chinh, Tan Phu District
+                              <br>
+                              Ho Chi Minh, Vietnam
+                            </p>
+                            <p class="info2">AQCine@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-7">
+                    <div class="single footer-caption mb-50">
+                      <div class="footer-tittle">
+                        <h4>Contact </h4>
+                        <p>Full name: Hoang Anh Quan</p>
+                        <p>Contact email: s3818278@rmit.edu.vn</p>
+                        <p>Phone number: 0935439152</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row d-flex align-items-center">
+                  <div class="col-xl-12">
+                    <div class="footer-link text-center">
+                      <p> This is the link to my Github <i class="fa fa-github"></i> reposity: <a
+                          href="https://github.com/s3818278/wp">Github repository</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </footer>
+      </div>
+    </div>
+</body>
+
 </html>
