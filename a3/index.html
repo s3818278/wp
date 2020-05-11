@@ -16,6 +16,7 @@
 
 <body>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+  <script>XREADY = false; window.onload = function () { window.App.deferredLoad() }</script>
   <script>
     var mybutton = document.getElementById("myBtn");
     window.onscroll = function () { scrollFunction() };
@@ -185,13 +186,11 @@
                 <a href="https://github.com/s3818278/wp" class="carousel-control-next" data-slide="next">
                   <span class="carousel-control-next-icon pink"></span>
                 </a>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
   <div class="nowshowing-area" id="now-showing-section">
@@ -221,7 +220,6 @@
                   <ul><button type="button" class="btn btn-primary">13:00</button></ul>
                   <ul><button type="button" class="btn btn-primary">14:30</button></ul>
                   <ul><button type="button" class="btn btn-primary">18:00</button></ul>
-
                 </td>
               </tr>
             </tbody>
@@ -677,9 +675,7 @@
 
           </div>
         </div>
-
         <script src="script.js.download"></script>
-
       </div>
       <div id="booking-area-section" class="booking-area-section"></div>
       <div class="container bg3">
