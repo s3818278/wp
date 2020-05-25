@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AQCine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font/flaticon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <div id="booking-area-section" class="booking-area-section ">
+        <div class="container bg3">
+          <div class="row d-flex  justify-content-center  bg1">
+            <div class="col-lg-10">
+              <div class="section-tittle">
+                <h1>Booking Area</h1>
+                <br>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <h1><span style="text-align: center; margin-left: 5cm; font-weight: 400;"id="movieName"></span><span style="text-align: center; font-weight: 400;" id="today"></span></h1>
+        <div class="row">
+            <div class="col-2 offset-1">
+                <h3>Standard</h3>
+                <form class="form-horizontal"  role="form" enctype="multipart/form-data" id="form2" name="inputForm" novalidate method="POST" action="">
+                    <div class="well">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label"><strong>Adult</strong>&nbsp;</label>
+                        <div class="col-xs-2">
+                            <select class="form-control" id="seats-STA" onchange="totalPrice()">
+                                <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                <option onchange="totalPrice()"value="1">1</option>
+                                <option onchange="totalPrice()"value="2">2</option>
+                                <option onchange="totalPrice()"value="3">3</option>
+                                <option onchange="totalPrice()"value="4">4</option>
+                                <option onchange="totalPrice()"value="5">5</option>
+                                <option onchange="totalPrice()"value="6">6</option>
+                                <option onchange="totalPrice()"value="7">7</option>
+                                <option onchange="totalPrice()"value="8">8</option>
+                                <option onchange="totalPrice()"value="9">9</option>
+                                <option onchange="totalPrice()"value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label"><strong>Concession</strong>&nbsp;</label>
+                        <div class="col-xs-2">
+                            <select class="form-control" id="seats-STP" onchange="totalPrice()">
+                                <option onchange="totalPrice()" value=''>--Please Select--</option>
+                                <option onchange="totalPrice()"value="1">1</option>
+                                <option onchange="totalPrice()"value="2">2</option>
+                                <option onchange="totalPrice()"value="3">3</option>
+                                <option onchange="totalPrice()" value="4">4</option>
+                                <option onchange="totalPrice()" value="5">5</option>
+                                <option onchange="totalPrice()" value="6">6</option>
+                                <option onchange="totalPrice()" value="7">7</option>
+                                <option onchange="totalPrice()" value="8">8</option>
+                                <option onchange="totalPrice()" value="9">9</option>
+                                <option onchange="totalPrice()" value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label"><strong>Child</strong>&nbsp;</label>
+                        <div class="col-xs-2">
+                            <select class="form-control" id="seats-STC" onchange="totalPrice()">
+                                <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                <option onchange="totalPrice()"value="1">1</option>
+                                <option onchange="totalPrice()"value="2">2</option>
+                                <option onchange="totalPrice()"value="3">3</option>
+                                <option onchange="totalPrice()"value="4">4</option>
+                                <option onchange="totalPrice()"value="5">5</option>
+                                <option onchange="totalPrice()"value="6">6</option>
+                                <option onchange="totalPrice()"value="7">7</option>
+                                <option onchange="totalPrice()"value="8">8</option>
+                                <option onchange="totalPrice()"value="9">9</option>
+                                <option onchange="totalPrice()"value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                
+            </div>
+            <div class="col-2">
+                <h3>First class</h3>
+                
+                    <div class="well">
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label"><strong>Adult</strong>&nbsp;</label>
+                                <div class="col-xs-2">
+                                    <select class="form-control" id="seats-FCA" onchange="totalPrice()">
+                                        <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                        <option onchange="totalPrice()"value="1">1</option>
+                                        <option onchange="totalPrice()"value="2">2</option>
+                                        <option onchange="totalPrice()"value="3">3</option>
+                                        <option onchange="totalPrice()"value="4">4</option>
+                                        <option onchange="totalPrice()"value="5">5</option>
+                                        <option onchange="totalPrice()"value="6">6</option>
+                                        <option onchange="totalPrice()"value="7">7</option>
+                                        <option onchange="totalPrice()"value="8">8</option>
+                                        <option onchange="totalPrice()"value="9">9</option>
+                                        <option onchange="totalPrice()"value="10">10</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label"><strong>Concession</strong>&nbsp;</label>
+                                <div class="col-xs-2">
+                                    <select class="form-control" id="seats-FCP" onchange="totalPrice()">
+                                        <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                        <option onchange="totalPrice()"value="1">1</option>
+                                        <option onchange="totalPrice()"value="2">2</option>
+                                        <option onchange="totalPrice()"value="3">3</option>
+                                        <option onchange="totalPrice()"value="4">4</option>
+                                        <option onchange="totalPrice()"value="5">5</option>
+                                        <option onchange="totalPrice()"value="6">6</option>
+                                        <option onchange="totalPrice()"value="7">7</option>
+                                        <option onchange="totalPrice()"value="8">8</option>
+                                        <option onchange="totalPrice()"value="9">9</option>
+                                        <option onchange="totalPrice()"value="10">10</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label"><strong>Child</strong>&nbsp;</label>
+                                <div class="col-xs-2">
+                                    <select class="form-control" id="seats-FCC" onchange="totalPrice()">
+                                        <option onchange="totalPrice()"value=''>--Please Select--</option>
+                                        <option onchange="totalPrice()"value="1">1</option>
+                                        <option onchange="totalPrice()"value="2">2</option>
+                                        <option onchange="totalPrice()"value="3">3</option>
+                                        <option onchange="totalPrice()"value="4">4</option>
+                                        <option onchange="totalPrice()"value="5">5</option>
+                                        <option onchange="totalPrice()"value="6">6</option>
+                                        <option onchange="totalPrice()"value="7">7</option>
+                                        <option onchange="totalPrice()"value="8">8</option>
+                                        <option onchange="totalPrice()"value="9">9</option>
+                                        <option onchange="totalPrice()"value="10">10</option>
+                                    </select>
+                                </div>
+                                <br>
+                               
+                            <div class="form-group">
+                            <label for="username"><strong>Price</strong></label>
+                            <h3 class="border"id="totalPrice">$0.00</h3>
+                        </div></div>
+                    </div>
+                
+            </div>
+            
+       
+           <div class="col-lg-5 offset-1 align-item-start justify-content-start">
+                
+        
+                    <div class="form-control">
+                        <label for="username">Name</label>
+                        <input type="text" placeholder="Enter your name" id="username" name="username" />
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Email</label>
+                        <input type="email" placeholder="Ex: abc@def.com" id="email" name="email"/>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                        <span class="error"></span>
+                     </div>
+                    <div class="form-control">
+                        <label for="username">Mobile</label>
+                        <input type="tel" placeholder="Enter mobile number" id="mobile" name="mobile"/>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Credit card</label>
+                        <input type="text" placeholder="Enter credit card" id="creditcard" name="creditcard"/>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                        <span class="error"></span>
+                    </div>
+                    <div class="date-picker">
+                        <label for=""><span style="margin-left: 0.4cm;">Expriry</span></label>
+                        <div class=" selected-date"></div>
+  
+                        <div class="dates">
+                            <div class="month">
+                                <div class="arrows prev-mth">&lt;</div>
+                                <div class="mth"></div>
+                                <div class="arrows next-mth">&gt;</div>
+                            </div>
+  
+                            <div class="days"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit" value="submit" name="submit" onclick="submitForms()"class="btn btn-lg">Order</button>  
+                </form>
+            </div>
+            
+        </div>
+    </div>
+      
+    <script src="script.js"></script>
+</body>
+
+</html>
